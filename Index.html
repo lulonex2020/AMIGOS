@@ -1,1 +1,405 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Stefanye 💜🌷</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: linear-gradient(145deg, #160923, #492064, #1b0c30);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, #ffffff99 1px, transparent 1.5px),
+    radial-gradient(circle, #df9aff77 1px, transparent 2px);
+  background-size: 45px 45px, 72px 72px;
+  animation: estrellas 18s linear infinite;
+  z-index: 0;
+}
+
+@keyframes estrellas {
+  from { background-position: 0 0, 20px 30px; }
+  to { background-position: 90px 90px, -70px 100px; }
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  width: 92%;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.card {
+  background: #ffffff12;
+  border: 1px solid #e3baff55;
+  border-radius: 24px;
+  padding: 28px 21px;
+  margin-bottom: 22px;
+  text-align: center;
+  box-shadow: 0 8px 30px #0003;
+  backdrop-filter: blur(8px);
+}
+
+.hero {
+  padding-top: 42px;
+  padding-bottom: 38px;
+}
+
+h1 {
+  color: #f0c5ff;
+  font-size: clamp(29px, 7vw, 40px);
+  margin: 15px 0;
+  text-shadow: 0 0 18px #d28aff55;
+}
+
+h2 {
+  color: #edc2ff;
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 12px 0;
+  color: #fff5ff;
+}
+
+.small {
+  font-size: 13px;
+  color: #d9bce9;
+}
+
+.emoji {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: linear-gradient(120deg, #f0c5ff, #c58aff);
+  border: 0;
+  border-radius: 30px;
+  padding: 14px 20px;
+  margin-top: 20px;
+  color: #351345;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #d28aff30;
+  transition: transform 0.2s;
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+.hidden {
+  display: none;
+}
+
+.stamp {
+  border: 2px dashed #e5b8ff;
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.final {
+  background: linear-gradient(145deg, #51276c, #29143e);
+  border-color: #edc2ff88;
+}
+
+.flower {
+  position: fixed;
+  top: -35px;
+  z-index: 1;
+  pointer-events: none;
+  animation: caer linear forwards;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #d5b6e9;
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+<!-- BIENVENIDA -->
+<section class="card hero">
+  <div class="emoji">💜🌷✨</div>
+
+  <p>UN PEQUEÑO REGALO PARA TI</p>
+
+  <h1>¡Felices 5 meses, Stefanye!</h1>
+
+  <p>
+    Para la enojona que tiene una paciencia
+    increíble para aguantarme. 😂
+  </p>
+
+  <p class="small">
+    Cinco meses de amistad, bromas y ocurrencias.
+  </p>
+
+  <button onclick="abrir('broma', this)">
+    Abrir mi regalito 🎁
+  </button>
+</section>
+
+<!-- BROMA -->
+<section id="broma" class="card hidden">
+  <div class="emoji">🤣🏆</div>
+
+  <h2>Certificado oficial de enojona</h2>
+
+  <p>
+    Se certifica que Stefanye tiene un talento
+    extraordinario para enojarse, renegar y aun
+    así seguir soportando a este personaje que
+    tiene como mejor amigo.
+  </p>
+
+  <div class="stamp">
+    <p>🏆 PREMIO A LA PACIENCIA INFINITA</p>
+
+    <p>
+      Por aguantar mis bromas, mis ocurrencias
+      y mis ganas de molestar.
+    </p>
+
+    <p>😂 ¡Eso ya es un superpoder!</p>
+  </div>
+
+  <button onclick="abrir('indirecta', this)">
+    Siguiente, enojona 👀
+  </button>
+</section>
+
+<!-- INDIRECTA SUAVE -->
+<section id="indirecta" class="card hidden">
+  <div class="emoji">😏💜</div>
+
+  <h2>Una cosa te voy a decir...</h2>
+
+  <p>
+    De todas las personas que existen, qué
+    casualidad que justo a ti me guste tanto
+    molestarte. 😂
+  </p>
+
+  <p>
+    Debe ser que tienes algo especial...
+    o que simplemente te enojas de una manera
+    que me da más ganas de fastidiarte. JAJAJA.
+  </p>
+
+  <p>
+    Ya, no te emociones, señorita.
+    Es parte de mis funciones como mejor amigo. 😎
+  </p>
+
+  <button onclick="abrir('animo', this)">
+    Ahora sí, algo importante 🌷
+  </button>
+</section>
+
+<!-- MENSAJE DE ÁNIMO -->
+<section id="animo" class="card hidden">
+  <div class="emoji">🫂🌷💜</div>
+
+  <h2>Un mensaje para ti, Stefanye</h2>
+
+  <p>
+    Fuera de bromas, quiero que recuerdes algo:
+    <strong>
+      nunca dejes de luchar por ti, incluso
+      cuando la vida se ponga difícil.
+    </strong>
+  </p>
+
+  <p>
+    Sé que no todos los días son fáciles.
+    A veces las cosas se complican, los problemas
+    se acumulan y hasta las personas más fuertes
+    se cansan.
+  </p>
+
+  <p>
+    Pero quiero que recuerdes lo mucho que vales
+    y la fuerza que tienes para seguir adelante.
+    No permitas que un mal momento te haga pensar
+    que no puedes lograr cosas bonitas en tu vida.
+  </p>
+
+  <p>
+    Ser fuerte no significa tener que estar bien
+    siempre. También puedes descansar, llorar,
+    pedir ayuda y tomarte tu tiempo para volver
+    a levantarte.
+  </p>
+
+  <p>
+    <strong>
+      Que la vida se ponga difícil no significa
+      que tengas que rendirte. Ve paso a paso,
+      cree en ti y sigue luchando por todo aquello
+      que te haga feliz.
+    </strong>
+  </p>
+
+  <p>
+    Deseo de corazón que te lleguen días más
+    bonitos, que tengas muchas razones para
+    sonreír y que nunca olvides lo importante
+    que eres.
+  </p>
+
+  <p>
+    Y aunque tu mejor amigo sea un jodido que no
+    te deja tranquila ni cinco minutos, quiero
+    que sepas que te tiene mucho cariño y que
+    desea verte bien. 🫂💜
+  </p>
+
+  <button onclick="abrir('final', this)">
+    Última sorpresa 🎁
+  </button>
+</section>
+
+<!-- DEDICATORIA FINAL -->
+<section id="final" class="card final hidden">
+  <div class="emoji">🌸💜✨</div>
+
+  <h2>Gracias por estos cinco meses</h2>
+
+  <p>
+    Gracias por tu amistad, por las risas,
+    por los momentos compartidos y hasta por
+    tus enojos, que ya forman parte del paquete. 😂
+  </p>
+
+  <p>
+    Espero que nos queden muchísimas historias
+    por contar, más bromas por hacer y muchos
+    momentos bonitos que recordar.
+  </p>
+
+  <p>
+    Sigue siendo esa persona única que eres.
+    Nunca dejes de luchar por tus sueños y
+    recuerda que mereces cosas buenas.
+  </p>
+
+  <p>
+    Y tenme paciencia, por favor, que todavía
+    me quedan muchas tonterías por decirte. 🤣
+  </p>
+
+  <div class="stamp">
+    <p>💌 PARA: STEFANYE</p>
+
+    <p>Por nuestros cinco meses de amistad. 💜</p>
+
+    <p>
+      <strong>Con cariño, tu mejor amigo Luis. 🌷</strong>
+    </p>
+
+    <p>✨ Un pequeño detalle hecho con mucho cariño.</p>
+
+    <p>📅 22 de octubre</p>
+  </div>
+
+  <p class="small">
+    Nunca olvides lo mucho que vales.
+    Sigue luchando y no dejes de creer en ti. 💜
+  </p>
+
+  <button onclick="location.reload()">
+    Volver a ver el regalito 🔄
+  </button>
+</section>
+
+<footer>
+  Hecho especialmente para Stefanye 💜<br>
+  Una amistad con bromas, paciencia y mucho cariño.
+</footer>
+
+</main>
+
+<script>
+function abrir(id, boton) {
+  const siguiente = document.getElementById(id);
+
+  if (!siguiente) return;
+
+  siguiente.classList.remove('hidden');
+  boton.style.display = 'none';
+
+  setTimeout(() => {
+    siguiente.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }, 100);
+}
+
+// Flores moradas y destellos que caen por la pantalla.
+const flores = ['🌸', '💜', '🌷', '✨', '🪻'];
+
+function crearFlor() {
+  const flor = document.createElement('div');
+
+  flor.className = 'flower';
+  flor.textContent =
+    flores[Math.floor(Math.random() * flores.length)];
+
+  flor.style.left = Math.random() * 100 + 'vw';
+  flor.style.fontSize = (14 + Math.random() * 15) + 'px';
+  flor.style.animationDuration = (7 + Math.random() * 7) + 's';
+
+  document.body.appendChild(flor);
+
+  setTimeout(() => {
+    flor.remove();
+  }, 15000);
+}
+
+setInterval(crearFlor, 850);
+</script>
+
+</body>
+</html>
+
